@@ -31,6 +31,6 @@ git submodule update --remote
 
 
 ## Importante
-Si se trabaja en el repositorio que tiene los sub-módulos, **primero actualizar y hacer push** en el sub-módulo y **después** en el repositorio principal. 
+Si se trabaja en el repositorio que tiene los sub-módulos (payment-ms por ejemplo), **primero pushear los cambios agregados** en ese sub-módulo y **después** en el repositorio principal (root). Es decir, luego de actualizar y pushear en el sub-módulo , será necesario pushear un commit en el repositorio principal actualizando la referencia con el hash del último commit del sub-módulo.
 
 Si se hace al revés, se perderán las referencias de los sub-módulos en el repositorio principal y tendremos que resolver conflictos.
