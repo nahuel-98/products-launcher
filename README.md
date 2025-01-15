@@ -36,3 +36,5 @@ If done the other way around, the submodule references in the main repository wi
 ## Architecture
 
 [![26eHyve.th.png](https://iili.io/26eHyve.th.png)](https://freeimage.host/i/26eHyve)
+
+![arq](https://freeimage.host/i/26eHyve)
