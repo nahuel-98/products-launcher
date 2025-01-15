@@ -1,36 +1,38 @@
- ## Dev
- 1. Clonar el repositorio
- 2. Crear un .env basado en el .env.template.
- 3. Ejecutar el comando `git submodule update --init --recursive`
- 4. Ejecutar el comando `docker compose up --build`
+## Dev
+1. Clone the repository
+2. Create a .env based on the .env.template.
+3. Run the command `git submodule update --init --recursive`
+4. Run the command `docker compose up --build`
 
- ### Pasos para crear los Git Submodules
+### Steps to create Git Submodules
 
-
-1. Crear un nuevo repositorio en GitHub
-2. Clonar el repositorio en la máquina local
-3. Añadir el submodule, donde `repository_url` es la url del repositorio y `directory_name` es el nombre de la carpeta donde quieres que se guarde el sub-módulo (no debe de existir en el proyecto)
+1. Create a new repository on GitHub
+2. Clone the repository on the local machine
+3. Add the submodule, where `repository_url` is the url of the repository and `directory_name` is the name of the folder where you want the submodule to be saved (it should not exist in the project)
 ```
 git submodule add <repository_url> <directory_name>
 ```
-4. Añadir los cambios al repositorio (git add, git commit, git push)
-Ej:
+4. Add the changes to the repository (git add, git commit, git push)
+Ex:
 ```
 git add .
 git commit -m "Add submodule"
 git push
 ```
-5. Inicializar y actualizar Sub-módulos, cuando alguien clona el repositorio por primera vez, debe de ejecutar el siguiente comando para inicializar y actualizar los sub-módulos
+5. Initialize and update submodules, when someone clones the repository for the first time, they must run the following command to initialize and update the submodules
 ```
 git submodule update --init --recursive
 ```
-6. Para actualizar las referencias de los sub-módulos
+6. To update the references of the submodules
 ```
 git submodule update --remote
 ```
 
+## Important
+If you work in the repository that has the submodules (payment-ms for example), **first push the added changes** in that submodule and **then** in the main repository (root). That is, after updating and pushing in the submodule, it will be necessary to push a commit in the main repository updating the reference with the hash of the last commit of the submodule.
 
-## Importante
-Si se trabaja en el repositorio que tiene los sub-módulos (payment-ms por ejemplo), **primero pushear los cambios agregados** en ese sub-módulo y **después** en el repositorio principal (root). Es decir, luego de actualizar y pushear en el sub-módulo , será necesario pushear un commit en el repositorio principal actualizando la referencia con el hash del último commit del sub-módulo.
+If done the other way around, the submodule references in the main repository will be lost and we will have to resolve conflicts.
 
-Si se hace al revés, se perderán las referencias de los sub-módulos en el repositorio principal y tendremos que resolver conflictos.
+## Architecture
+
+[![26eHyve.th.png](https://iili.io/26eHyve.th.png)](https://freeimage.host/i/26eHyve)
