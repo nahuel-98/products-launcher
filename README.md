@@ -1,4 +1,4 @@
-## Dev
+## Start the whole microservices - Development environment
 1. Clone the repository
 2. Create a .env based on the .env.template.
 3. Run the command `git submodule update --init --recursive`
@@ -35,4 +35,4 @@ If done the other way around, the submodule references in the main repository wi
 
 ## Architecture
 
-[![26eHyve.th.png](https://iili.io/26eHyve.th.png)](https://freeimage.host/i/26eHyve)
+![Image](https://github.com/user-attachments/assets/04a65ee4-d813-4c3c-9136-6914679a1aaf)
