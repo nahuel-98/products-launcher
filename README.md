@@ -7,6 +7,9 @@ The Products Launcher repository serves as the central hub for managing the vari
 * **API Gateway:** Acts as a single entry point for clients. Routes requests to the appropriate services via NATS.
 * **NATS:** A messaging server that allows microservices to communicate asynchronously. It acts as a message bus, where services can publish and subscribe to events.
 
+* **Docker Network:** All microservices are located within a Docker network, making it easy to communicate with each other.
+* **Stripe Webhook:** Stripe sends notifications to our system via a webhook, allowing our system to react to events such as successful or failed payments.
+
 * **Microservices:**
 * **Payments:** Handles payment processing. Integrates with Stripe to manage transactions.
 * **Auth:** Handles user authentication.
@@ -14,8 +17,6 @@ The Products Launcher repository serves as the central hub for managing the vari
 * **Orders:** Handles order creation and management.
 * **Details:** Handles additional order-related details.
 
-* **Docker Network:** All microservices are located within a Docker network, making it easy to communicate with each other.
-* **Stripe Webhook:** Stripe sends notifications to our system via a webhook, allowing our system to react to events such as successful or failed payments.
 
 ## Architecture
 
