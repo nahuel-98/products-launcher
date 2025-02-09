@@ -14,8 +14,7 @@ The Products Launcher repository serves as the central hub for managing the vari
 * **Payments:** Handles payment processing. Integrates with Stripe to manage transactions.
 * **Auth:** Handles user authentication.
 * **Products:** Manages product information.
-* **Orders:** Handles order creation and management.
-* **Details:** Handles additional order-related details.
+* **Orders:** Handles order creation and management, as well as order-related details.
 
 
 ## Architecture
