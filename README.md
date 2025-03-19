@@ -22,7 +22,7 @@ The Products Launcher repository serves as the central hub for managing the vari
 ![Image](https://github.com/user-attachments/assets/04a65ee4-d813-4c3c-9136-6914679a1aaf)
 
 ## Start the whole microservices - Development environment
-1. Clone the repository
+1. Clone the repository.
 2. Create a .env based on the .env.template.
 3. Run the command `git submodule update --init --recursive`
 4. Run the command `docker compose up --build`
